@@ -1,0 +1,30 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "Security-test"
+  description: "security test"
+  tags:
+    - front
+  links:
+    - url: https://backstage-demo.westeurope.cloudapp.azure.com/test-development-deployment/
+      title: Endpoint
+      icon: dashboard
+    - url: https://github.com/fernando-bercedo-NTT/skills-secure-repository-supply-chain
+      title: GitHub Repo
+      icon: github
+    - url: http://backstage-demo-sonarqube.westeurope.cloudapp.azure.com:9000/dashboard?id=skills-secure-repository-supply-chain
+      title: Sonarqube Project
+      icon: star
+  annotations:
+    github.com/project-slug: fernando-bercedo-NTT/skills-secure-repository-supply-chain
+    backstage.io/techdocs-ref: dir:.
+    sonarqube.org/project-key: skills-secure-repository-supply-chain
+    # tektonci/build-namespace: tekton-pipelines
+    # tektonci/pipeline-label-selector: triggers.tekton.dev/eventlistener=test
+    backstage.io/kubernetes-label-selector: app=skills-secure-repository-supply-chain
+    argocd/app-name: test
+    github.com/devcontainer-path: .devcontainer/javascript-node-18-copilot/devcontainer.json
+spec:
+  type: website
+  lifecycle: experimental
+  owner: "group:default/architecture-leads"
