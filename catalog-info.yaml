@@ -5,6 +5,7 @@ metadata:
   description: "security test"
   tags:
     - front
+    - public
   links:
     - url: https://backstage-demo.westeurope.cloudapp.azure.com/test-development-deployment/
       title: Endpoint
@@ -27,4 +28,4 @@ metadata:
 spec:
   type: website
   lifecycle: experimental
-  owner: "group:default/architecture-leads"
+  owner: "user:default/fernando-bercedo-NTT"
